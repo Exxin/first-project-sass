@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/sass.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Final Project Cat CRM</title>
+    <title>SASS Cats Dashboard Template</title>
+    <script type="module" crossorigin src="/sass-cats-dashboard-template/assets/index-5decdefb.js"></script>
+    <link rel="stylesheet" href="/sass-cats-dashboard-template/assets/index.css">
   </head>
   <body class="page">
     <aside class="sidebar js-menu" id="sidebar-menu">
@@ -12,15 +14,16 @@
         <button
           class="menu-btn js-menu-close"
           type="button"
-          aria-label="Close menu">
+          aria-label="Close menu"
+        >
           <svg class="menu-btn-icon" width="20" height="20">
-            <use href="./src/img/icons.svg#icon-x-close"></use>
+            <use href="/sass-cats-dashboard-template/assets/icons.svg#icon-x-close"></use>
           </svg>
         </button>
 
         <a class="logo" href="./index.html">
           <svg class="logo-icon" width="24" height="24">
-            <use href="./src/img/icons.svg#icon-logo"></use>
+            <use href="/sass-cats-dashboard-template/assets/icons.svg#icon-logo"></use>
           </svg>
           Cat CRM
         </a>
@@ -29,7 +32,7 @@
           <li class="menu-item">
             <a class="menu-link current" href="./index.html">
               <svg class="menu-icon" width="20" height="20">
-                <use href="./src/img/icons.svg#menu-columns"></use>
+                <use href="/sass-cats-dashboard-template/assets/icons.svg#menu-columns"></use>
               </svg>
               Overview
             </a>
@@ -37,7 +40,7 @@
           <li class="menu-item">
             <a class="menu-link" href="">
               <svg class="menu-icon" width="20" height="20">
-                <use href="./src/img/icons.svg#menu-person-plus"></use>
+                <use href="/sass-cats-dashboard-template/assets/icons.svg#menu-person-plus"></use>
               </svg>
               Contacts
             </a>
@@ -45,7 +48,7 @@
           <li class="menu-item">
             <a class="menu-link" href="">
               <svg class="menu-icon" width="20" height="20">
-                <use href="./src/img/icons.svg#menu-briefcase"></use>
+                <use href="/sass-cats-dashboard-template/assets/icons.svg#menu-briefcase"></use>
               </svg>
               Companies
             </a>
@@ -53,7 +56,7 @@
           <li class="menu-item">
             <a class="menu-link" href="">
               <svg class="menu-icon" width="20" height="20">
-                <use href="./src/img/icons.svg#menu-coin"></use>
+                <use href="/sass-cats-dashboard-template/assets/icons.svg#menu-coin"></use>
               </svg>
               Deals
             </a>
@@ -61,7 +64,7 @@
           <li class="menu-item">
             <a class="menu-link" href="">
               <svg class="menu-icon" width="20" height="20">
-                <use href="./src/img/icons.svg#menu-clipboard"></use>
+                <use href="/sass-cats-dashboard-template/assets/icons.svg#menu-clipboard"></use>
               </svg>
               Document
             </a>
@@ -69,16 +72,16 @@
           <li class="menu-item">
             <a class="menu-link" href="">
               <svg class="menu-icon" width="20" height="20">
-                <use href="./src/img/icons.svg#menu-envelope"></use>
+                <use href="/sass-cats-dashboard-template/assets/icons.svg#menu-envelope"></use>
               </svg>
               Mesage
-              <span class="menu-notification notification">8</span>
+              <span class="menu-notification notification is-notify">8</span>
             </a>
           </li>
           <li class="menu-item">
             <a class="menu-link" href="">
               <svg class="menu-icon" width="20" height="20">
-                <use href="./src/img/icons.svg#menu-calendar"></use>
+                <use href="/sass-cats-dashboard-template/assets/icons.svg#menu-calendar"></use>
               </svg>
               Calendar
             </a>
@@ -86,7 +89,7 @@
           <li class="menu-item">
             <a class="menu-link" href="">
               <svg class="menu-icon" width="20" height="20">
-                <use href="./src/img/icons.svg#menu-journal"></use>
+                <use href="/sass-cats-dashboard-template/assets/icons.svg#menu-journal"></use>
               </svg>
               Report
             </a>
@@ -100,30 +103,33 @@
         class="menu-btn js-menu-open"
         type="button"
         aria-expanded="false"
-        aria-controls="sidebar-menu">
+        aria-controls="sidebar-menu"
+      >
         <svg class="menu-btn-icon" width="24" height="24">
-          <use href="./src/img/icons.svg#icon-menu"></use>
+          <use href="/sass-cats-dashboard-template/assets/icons.svg#icon-menu"></use>
         </svg>
         Overview
       </button>
       <label class="search-field">
         <svg class="search-icon" width="20" height="20">
-          <use href="./src/img/icons.svg#icon-search"></use>
+          <use href="/sass-cats-dashboard-template/assets/icons.svg#icon-search"></use>
         </svg>
         <input
           class="search-input"
           type="search"
           name="user_search"
           placeholder="Search Something..."
-          aria-label="Search for any term" />
+          aria-label="Search for any term"
+        />
       </label>
       <button
-        class="notification-btn btn"
+        class="notification-btn"
         type="button"
         data-notify="true"
-        aria-label="Bell button">
+        aria-label="Bell button"
+      >
         <svg class="notification-btn-icon" width="20" height="20">
-          <use href="./src/img/icons.svg#icon-bell"></use>
+          <use href="/sass-cats-dashboard-template/assets/icons.svg#icon-bell"></use>
         </svg>
       </button>
     </header>
@@ -134,11 +140,11 @@
           <span class="page-title-accent">Hi Yaroslav,</span>
           Welcome into Cat CRM Dashboard
         </h1>
-        <button class="welcome-btn" type="button">
-          <svg class="welcome-btn-icon" width="16" height="16">
-            <use href="./src/img/icons.svg#icon-plus"></use>
+        <button class="welcome-btn btn btn--primary" type="button">
+          <svg class="btn-icon" width="16" height="16">
+            <use href="/sass-cats-dashboard-template/assets/icons.svg#icon-plus"></use>
           </svg>
-          Primary normal
+          <span class="btn-inner">Primary normal</span>
         </button>
       </section>
 
@@ -153,18 +159,20 @@
             <details class="co-workers-details">
               <summary class="co-workers-data">
                 <svg class="co-workers-icon" width="16" height="16">
-                  <use class="plus" href="./src/img/icons.svg#icon-plus"></use>
+                  <use class="plus" href="/sass-cats-dashboard-template/assets/icons.svg#icon-plus"></use>
                   <use
                     class="minus"
-                    href="./src/img/icons.svg#icon-minus"></use>
+                    href="/sass-cats-dashboard-template/assets/icons.svg#icon-minus"
+                  ></use>
                 </svg>
                 <div class="co-workers-bio">
                   <div class="thumb">
                     <img
-                      src="./src/img/avatars/avatar-1.jpg"
+                      src="/sass-cats-dashboard-template/assets/avatar-1.jpg"
                       alt=""
                       width="42"
-                      height="63" />
+                      height="63"
+                    />
                   </div>
                   <p class="co-workers-caption">Andrew Mike</p>
                 </div>
@@ -173,14 +181,16 @@
                     <svg
                       class="controls-btn-icon success"
                       width="20"
-                      height="20">
+                      height="20"
+                    >
                       <use
-                        href="./src/img/icons.svg#icon-arrow-clockwise"></use>
+                        href="/sass-cats-dashboard-template/assets/icons.svg#icon-arrow-clockwise"
+                      ></use>
                     </svg>
                   </button>
                   <button class="controls-btn" type="button">
                     <svg class="controls-btn-icon error" width="20" height="20">
-                      <use href="./src/img/icons.svg#icon-x-close"></use>
+                      <use href="/sass-cats-dashboard-template/assets/icons.svg#icon-x-close"></use>
                     </svg>
                   </button>
                 </div>
@@ -195,18 +205,20 @@
             <details class="co-workers-details">
               <summary class="co-workers-data">
                 <svg class="co-workers-icon" width="16" height="16">
-                  <use class="plus" href="./src/img/icons.svg#icon-plus"></use>
+                  <use class="plus" href="/sass-cats-dashboard-template/assets/icons.svg#icon-plus"></use>
                   <use
                     class="minus"
-                    href="./src/img/icons.svg#icon-minus"></use>
+                    href="/sass-cats-dashboard-template/assets/icons.svg#icon-minus"
+                  ></use>
                 </svg>
                 <div class="co-workers-bio">
                   <div class="thumb">
                     <img
-                      src="./src/img/avatars/avatar-1.jpg"
+                      src="/sass-cats-dashboard-template/assets/avatar-1.jpg"
                       alt=""
                       width="42"
-                      height="63" />
+                      height="63"
+                    />
                   </div>
                   <p class="co-workers-caption">Andrew Mike</p>
                 </div>
@@ -215,14 +227,16 @@
                     <svg
                       class="controls-btn-icon success"
                       width="20"
-                      height="20">
+                      height="20"
+                    >
                       <use
-                        href="./src/img/icons.svg#icon-arrow-clockwise"></use>
+                        href="/sass-cats-dashboard-template/assets/icons.svg#icon-arrow-clockwise"
+                      ></use>
                     </svg>
                   </button>
                   <button class="controls-btn" type="button">
                     <svg class="controls-btn-icon error" width="20" height="20">
-                      <use href="./src/img/icons.svg#icon-x-close"></use>
+                      <use href="/sass-cats-dashboard-template/assets/icons.svg#icon-x-close"></use>
                     </svg>
                   </button>
                 </div>
@@ -237,18 +251,20 @@
             <details class="co-workers-details">
               <summary class="co-workers-data">
                 <svg class="co-workers-icon" width="16" height="16">
-                  <use class="plus" href="./src/img/icons.svg#icon-plus"></use>
+                  <use class="plus" href="/sass-cats-dashboard-template/assets/icons.svg#icon-plus"></use>
                   <use
                     class="minus"
-                    href="./src/img/icons.svg#icon-minus"></use>
+                    href="/sass-cats-dashboard-template/assets/icons.svg#icon-minus"
+                  ></use>
                 </svg>
                 <div class="co-workers-bio">
                   <div class="thumb">
                     <img
-                      src="./src/img/avatars/avatar-1.jpg"
+                      src="/sass-cats-dashboard-template/assets/avatar-1.jpg"
                       alt=""
                       width="42"
-                      height="63" />
+                      height="63"
+                    />
                   </div>
                   <p class="co-workers-caption">Andrew Mike</p>
                 </div>
@@ -257,14 +273,16 @@
                     <svg
                       class="controls-btn-icon success"
                       width="20"
-                      height="20">
+                      height="20"
+                    >
                       <use
-                        href="./src/img/icons.svg#icon-arrow-clockwise"></use>
+                        href="/sass-cats-dashboard-template/assets/icons.svg#icon-arrow-clockwise"
+                      ></use>
                     </svg>
                   </button>
                   <button class="controls-btn" type="button">
                     <svg class="controls-btn-icon error" width="20" height="20">
-                      <use href="./src/img/icons.svg#icon-x-close"></use>
+                      <use href="/sass-cats-dashboard-template/assets/icons.svg#icon-x-close"></use>
                     </svg>
                   </button>
                 </div>
@@ -279,18 +297,20 @@
             <details class="co-workers-details">
               <summary class="co-workers-data">
                 <svg class="co-workers-icon" width="16" height="16">
-                  <use class="plus" href="./src/img/icons.svg#icon-plus"></use>
+                  <use class="plus" href="/sass-cats-dashboard-template/assets/icons.svg#icon-plus"></use>
                   <use
                     class="minus"
-                    href="./src/img/icons.svg#icon-minus"></use>
+                    href="/sass-cats-dashboard-template/assets/icons.svg#icon-minus"
+                  ></use>
                 </svg>
                 <div class="co-workers-bio">
                   <div class="thumb">
                     <img
-                      src="./src/img/avatars/avatar-1.jpg"
+                      src="/sass-cats-dashboard-template/assets/avatar-1.jpg"
                       alt=""
                       width="42"
-                      height="63" />
+                      height="63"
+                    />
                   </div>
                   <p class="co-workers-caption">Andrew Mike</p>
                 </div>
@@ -299,14 +319,16 @@
                     <svg
                       class="controls-btn-icon success"
                       width="20"
-                      height="20">
+                      height="20"
+                    >
                       <use
-                        href="./src/img/icons.svg#icon-arrow-clockwise"></use>
+                        href="/sass-cats-dashboard-template/assets/icons.svg#icon-arrow-clockwise"
+                      ></use>
                     </svg>
                   </button>
                   <button class="controls-btn" type="button">
                     <svg class="controls-btn-icon error" width="20" height="20">
-                      <use href="./src/img/icons.svg#icon-x-close"></use>
+                      <use href="/sass-cats-dashboard-template/assets/icons.svg#icon-x-close"></use>
                     </svg>
                   </button>
                 </div>
@@ -321,18 +343,20 @@
             <details class="co-workers-details">
               <summary class="co-workers-data">
                 <svg class="co-workers-icon" width="16" height="16">
-                  <use class="plus" href="./src/img/icons.svg#icon-plus"></use>
+                  <use class="plus" href="/sass-cats-dashboard-template/assets/icons.svg#icon-plus"></use>
                   <use
                     class="minus"
-                    href="./src/img/icons.svg#icon-minus"></use>
+                    href="/sass-cats-dashboard-template/assets/icons.svg#icon-minus"
+                  ></use>
                 </svg>
                 <div class="co-workers-bio">
                   <div class="thumb">
                     <img
-                      src="./src/img/avatars/avatar-1.jpg"
+                      src="/sass-cats-dashboard-template/assets/avatar-1.jpg"
                       alt=""
                       width="42"
-                      height="63" />
+                      height="63"
+                    />
                   </div>
                   <p class="co-workers-caption">Andrew Mike</p>
                 </div>
@@ -341,14 +365,16 @@
                     <svg
                       class="controls-btn-icon success"
                       width="20"
-                      height="20">
+                      height="20"
+                    >
                       <use
-                        href="./src/img/icons.svg#icon-arrow-clockwise"></use>
+                        href="/sass-cats-dashboard-template/assets/icons.svg#icon-arrow-clockwise"
+                      ></use>
                     </svg>
                   </button>
                   <button class="controls-btn" type="button">
                     <svg class="controls-btn-icon error" width="20" height="20">
-                      <use href="./src/img/icons.svg#icon-x-close"></use>
+                      <use href="/sass-cats-dashboard-template/assets/icons.svg#icon-x-close"></use>
                     </svg>
                   </button>
                 </div>
@@ -379,10 +405,11 @@
                   <td>
                     <div class="thumb">
                       <img
-                        src="./src/img/avatars/avatar-1.jpg"
+                        src="/sass-cats-dashboard-template/assets/avatar-1.jpg"
                         alt=""
                         width="42"
-                        height="63" />
+                        height="63"
+                      />
                     </div>
                   </td>
                   <td>Andrew Mike</td>
@@ -394,17 +421,20 @@
                         <svg
                           class="controls-btn-icon success"
                           width="20"
-                          height="20">
+                          height="20"
+                        >
                           <use
-                            href="./src/img/icons.svg#icon-arrow-clockwise"></use>
+                            href="/sass-cats-dashboard-template/assets/icons.svg#icon-arrow-clockwise"
+                          ></use>
                         </svg>
                       </button>
                       <button class="controls-btn" type="button">
                         <svg
                           class="controls-btn-icon error"
                           width="20"
-                          height="20">
-                          <use href="./src/img/icons.svg#icon-x-close"></use>
+                          height="20"
+                        >
+                          <use href="/sass-cats-dashboard-template/assets/icons.svg#icon-x-close"></use>
                         </svg>
                       </button>
                     </div>
@@ -414,10 +444,11 @@
                   <td>
                     <div class="thumb">
                       <img
-                        src="./src/img/avatars/avatar-1.jpg"
+                        src="/sass-cats-dashboard-template/assets/avatar-1.jpg"
                         alt=""
                         width="42"
-                        height="63" />
+                        height="63"
+                      />
                     </div>
                   </td>
                   <td>Andrew Mike</td>
@@ -429,17 +460,20 @@
                         <svg
                           class="controls-btn-icon success"
                           width="20"
-                          height="20">
+                          height="20"
+                        >
                           <use
-                            href="./src/img/icons.svg#icon-arrow-clockwise"></use>
+                            href="/sass-cats-dashboard-template/assets/icons.svg#icon-arrow-clockwise"
+                          ></use>
                         </svg>
                       </button>
                       <button class="controls-btn" type="button">
                         <svg
                           class="controls-btn-icon error"
                           width="20"
-                          height="20">
-                          <use href="./src/img/icons.svg#icon-x-close"></use>
+                          height="20"
+                        >
+                          <use href="/sass-cats-dashboard-template/assets/icons.svg#icon-x-close"></use>
                         </svg>
                       </button>
                     </div>
@@ -449,10 +483,11 @@
                   <td>
                     <div class="thumb">
                       <img
-                        src="./src/img/avatars/avatar-1.jpg"
+                        src="/sass-cats-dashboard-template/assets/avatar-1.jpg"
                         alt=""
                         width="42"
-                        height="63" />
+                        height="63"
+                      />
                     </div>
                   </td>
                   <td>Andrew Mike</td>
@@ -464,17 +499,20 @@
                         <svg
                           class="controls-btn-icon success"
                           width="20"
-                          height="20">
+                          height="20"
+                        >
                           <use
-                            href="./src/img/icons.svg#icon-arrow-clockwise"></use>
+                            href="/sass-cats-dashboard-template/assets/icons.svg#icon-arrow-clockwise"
+                          ></use>
                         </svg>
                       </button>
                       <button class="controls-btn" type="button">
                         <svg
                           class="controls-btn-icon error"
                           width="20"
-                          height="20">
-                          <use href="./src/img/icons.svg#icon-x-close"></use>
+                          height="20"
+                        >
+                          <use href="/sass-cats-dashboard-template/assets/icons.svg#icon-x-close"></use>
                         </svg>
                       </button>
                     </div>
@@ -484,10 +522,11 @@
                   <td>
                     <div class="thumb">
                       <img
-                        src="./src/img/avatars/avatar-1.jpg"
+                        src="/sass-cats-dashboard-template/assets/avatar-1.jpg"
                         alt=""
                         width="42"
-                        height="63" />
+                        height="63"
+                      />
                     </div>
                   </td>
                   <td>Andrew Mike</td>
@@ -499,17 +538,20 @@
                         <svg
                           class="controls-btn-icon success"
                           width="20"
-                          height="20">
+                          height="20"
+                        >
                           <use
-                            href="./src/img/icons.svg#icon-arrow-clockwise"></use>
+                            href="/sass-cats-dashboard-template/assets/icons.svg#icon-arrow-clockwise"
+                          ></use>
                         </svg>
                       </button>
                       <button class="controls-btn" type="button">
                         <svg
                           class="controls-btn-icon error"
                           width="20"
-                          height="20">
-                          <use href="./src/img/icons.svg#icon-x-close"></use>
+                          height="20"
+                        >
+                          <use href="/sass-cats-dashboard-template/assets/icons.svg#icon-x-close"></use>
                         </svg>
                       </button>
                     </div>
@@ -519,10 +561,11 @@
                   <td>
                     <div class="thumb">
                       <img
-                        src="./src/img/avatars/avatar-1.jpg"
+                        src="/sass-cats-dashboard-template/assets/avatar-1.jpg"
                         alt=""
                         width="42"
-                        height="63" />
+                        height="63"
+                      />
                     </div>
                   </td>
                   <td>Andrew Mike</td>
@@ -534,17 +577,20 @@
                         <svg
                           class="controls-btn-icon success"
                           width="20"
-                          height="20">
+                          height="20"
+                        >
                           <use
-                            href="./src/img/icons.svg#icon-arrow-clockwise"></use>
+                            href="/sass-cats-dashboard-template/assets/icons.svg#icon-arrow-clockwise"
+                          ></use>
                         </svg>
                       </button>
                       <button class="controls-btn" type="button">
                         <svg
                           class="controls-btn-icon error"
                           width="20"
-                          height="20">
-                          <use href="./src/img/icons.svg#icon-x-close"></use>
+                          height="20"
+                        >
+                          <use href="/sass-cats-dashboard-template/assets/icons.svg#icon-x-close"></use>
                         </svg>
                       </button>
                     </div>
@@ -554,10 +600,11 @@
                   <td>
                     <div class="thumb">
                       <img
-                        src="./src/img/avatars/avatar-1.jpg"
+                        src="/sass-cats-dashboard-template/assets/avatar-1.jpg"
                         alt=""
                         width="42"
-                        height="63" />
+                        height="63"
+                      />
                     </div>
                   </td>
                   <td>Andrew Mike</td>
@@ -569,17 +616,20 @@
                         <svg
                           class="controls-btn-icon success"
                           width="20"
-                          height="20">
+                          height="20"
+                        >
                           <use
-                            href="./src/img/icons.svg#icon-arrow-clockwise"></use>
+                            href="/sass-cats-dashboard-template/assets/icons.svg#icon-arrow-clockwise"
+                          ></use>
                         </svg>
                       </button>
                       <button class="controls-btn" type="button">
                         <svg
                           class="controls-btn-icon error"
                           width="20"
-                          height="20">
-                          <use href="./src/img/icons.svg#icon-x-close"></use>
+                          height="20"
+                        >
+                          <use href="/sass-cats-dashboard-template/assets/icons.svg#icon-x-close"></use>
                         </svg>
                       </button>
                     </div>
@@ -589,10 +639,11 @@
                   <td>
                     <div class="thumb">
                       <img
-                        src="./src/img/avatars/avatar-1.jpg"
+                        src="/sass-cats-dashboard-template/assets/avatar-1.jpg"
                         alt=""
                         width="42"
-                        height="63" />
+                        height="63"
+                      />
                     </div>
                   </td>
                   <td>Andrew Mike</td>
@@ -604,17 +655,20 @@
                         <svg
                           class="controls-btn-icon success"
                           width="20"
-                          height="20">
+                          height="20"
+                        >
                           <use
-                            href="./src/img/icons.svg#icon-arrow-clockwise"></use>
+                            href="/sass-cats-dashboard-template/assets/icons.svg#icon-arrow-clockwise"
+                          ></use>
                         </svg>
                       </button>
                       <button class="controls-btn" type="button">
                         <svg
                           class="controls-btn-icon error"
                           width="20"
-                          height="20">
-                          <use href="./src/img/icons.svg#icon-x-close"></use>
+                          height="20"
+                        >
+                          <use href="/sass-cats-dashboard-template/assets/icons.svg#icon-x-close"></use>
                         </svg>
                       </button>
                     </div>
@@ -636,17 +690,18 @@
                 <div class="person-thumb">
                   <img
                     class="person-avatar"
-                    src="./src/img/avatars/avatar-1.jpg"
+                    src="/sass-cats-dashboard-template/assets/avatar-1.jpg"
                     alt="George Fields"
                     width="42"
-                    height="63" />
+                    height="63"
+                  />
                 </div>
                 <p class="person-caption">George Fields</p>
               </div>
             </div>
             <div class="board-right">
               <p class="board-tag">Reminder</p>
-              <p class="badge warning">Completed</p>
+              <p class="badge-warning">Completed</p>
             </div>
           </li>
           <li class="board-item">
@@ -659,17 +714,18 @@
                 <div class="person-thumb">
                   <img
                     class="person-avatar"
-                    src="./src/img/avatars/avatar-2.jpg"
+                    src="/sass-cats-dashboard-template/assets/avatar-2.jpg"
                     alt="George Fields"
                     width="72"
-                    height="96" />
+                    height="96"
+                  />
                 </div>
                 <p class="person-caption">Amanda Pitt</p>
               </div>
             </div>
             <div class="board-right">
               <p class="board-tag">Call</p>
-              <p class="badge error">Ended</p>
+              <p class="badge-danger">Ended</p>
             </div>
           </li>
           <li class="board-item hide">
@@ -681,21 +737,24 @@
               <div class="board-coworker person">
                 <div class="person-avatar">
                   <img
-                    src="./src/img/avatars/avatar-1.jpg"
+                    src="/sass-cats-dashboard-template/assets/avatar-1.jpg"
                     alt="George Fields"
                     width="42"
-                    height="63" />
+                    height="63"
+                  />
                 </div>
                 <p class="person-caption">George Fields</p>
               </div>
             </div>
             <div class="board-right">
               <p class="board-tag">Reminder</p>
-              <p class="badge">Completed</p>
+              <p class="badge-success">Completed</p>
             </div>
           </li>
         </ul>
-        <button class="show-more-btn" type="button">Show more</button>
+        <button class="co-workers-btn btn btn--secondary" type="button">
+          <span class="btn-inner">Show more</span>
+        </button>
       </section>
 
       <section class="tasks">
@@ -707,9 +766,10 @@
                 class="tasks-input visually-hidden"
                 type="checkbox"
                 name="task_status"
-                value="unfinished" />
+                value="unfinished"
+              />
               <svg class="tasks-checkbox-icon" width="20" height="20">
-                <use href="./src/img/icons.svg#icon-done"></use>
+                <use href="/sass-cats-dashboard-template/assets/icons.svg#icon-done"></use>
               </svg>
             </label>
             <div class="tasks-info">
@@ -720,7 +780,7 @@
             </div>
             <button class="tasks-btn" type="button">
               <svg class="tasks-btn-icon" width="20" height="20">
-                <use href="./src/img/icons.svg#icon-gear"></use>
+                <use href="/sass-cats-dashboard-template/assets/icons.svg#icon-gear"></use>
               </svg>
             </button>
           </li>
@@ -731,9 +791,10 @@
                 type="checkbox"
                 name="task_status"
                 value="unfinished"
-                checked />
+                checked
+              />
               <svg class="tasks-checkbox-icon" width="20" height="20">
-                <use href="./src/img/icons.svg#icon-done"></use>
+                <use href="/sass-cats-dashboard-template/assets/icons.svg#icon-done"></use>
               </svg>
             </label>
             <div class="tasks-info">
@@ -744,7 +805,7 @@
             </div>
             <button class="tasks-btn" type="button">
               <svg class="tasks-btn-icon" width="20" height="20">
-                <use href="./src/img/icons.svg#icon-gear"></use>
+                <use href="/sass-cats-dashboard-template/assets/icons.svg#icon-gear"></use>
               </svg>
             </button>
           </li>
@@ -754,9 +815,10 @@
                 class="tasks-input visually-hidden"
                 type="checkbox"
                 name="task_status"
-                value="unfinished" />
+                value="unfinished"
+              />
               <svg class="tasks-checkbox-icon" width="20" height="20">
-                <use href="./src/img/icons.svg#icon-done"></use>
+                <use href="/sass-cats-dashboard-template/assets/icons.svg#icon-done"></use>
               </svg>
             </label>
             <div class="tasks-info">
@@ -767,7 +829,7 @@
             </div>
             <button class="tasks-btn" type="button">
               <svg class="tasks-btn-icon" width="20" height="20">
-                <use href="./src/img/icons.svg#icon-gear"></use>
+                <use href="/sass-cats-dashboard-template/assets/icons.svg#icon-gear"></use>
               </svg>
             </button>
           </li>
@@ -777,9 +839,10 @@
                 class="tasks-input visually-hidden"
                 type="checkbox"
                 name="task_status"
-                value="unfinished" />
+                value="unfinished"
+              />
               <svg class="tasks-checkbox-icon" width="20" height="20">
-                <use href="./src/img/icons.svg#icon-done"></use>
+                <use href="/sass-cats-dashboard-template/assets/icons.svg#icon-done"></use>
               </svg>
             </label>
             <div class="tasks-info">
@@ -788,7 +851,7 @@
             </div>
             <button class="tasks-btn" type="button">
               <svg class="tasks-btn-icon" width="20" height="20">
-                <use href="./src/img/icons.svg#icon-gear"></use>
+                <use href="/sass-cats-dashboard-template/assets/icons.svg#icon-gear"></use>
               </svg>
             </button>
           </li>
@@ -798,9 +861,10 @@
                 class="tasks-input visually-hidden"
                 type="checkbox"
                 name="task_status"
-                value="unfinished" />
+                value="unfinished"
+              />
               <svg class="tasks-checkbox-icon" width="20" height="20">
-                <use href="./src/img/icons.svg#icon-done"></use>
+                <use href="/sass-cats-dashboard-template/assets/icons.svg#icon-done"></use>
               </svg>
             </label>
             <div class="tasks-info">
@@ -809,7 +873,7 @@
             </div>
             <button class="tasks-btn" type="button">
               <svg class="tasks-btn-icon" width="20" height="20">
-                <use href="./src/img/icons.svg#icon-gear"></use>
+                <use href="/sass-cats-dashboard-template/assets/icons.svg#icon-gear"></use>
               </svg>
             </button>
           </li>
@@ -820,16 +884,17 @@
         <h2 class="reports-title"><span>Task Report</span> | Last 2 Weeks</h2>
         <ul class="reports-list">
           <li class="reports-item" data-status="up">
-            <div class="reports-co-worker co-worker">
-              <div class="co-worker-thumb">
+            <div class="reports-staff staff">
+              <div class="staff-thumb">
                 <img
-                  class="co-worker-avatar"
-                  src="./src/img/avatars/thumb.svg"
+                  class="staff-avatar"
+                  src="/sass-cats-dashboard-template/assets/thumb.svg"
                   alt="Ibnu Mas’ud"
                   width="32"
-                  height="32" />
+                  height="32"
+                />
               </div>
-              <h3 class="co-worker-caption">Ibnu Mas’ud</h3>
+              <h3 class="staff-caption">Ibnu Mas’ud</h3>
             </div>
             <progress class="reports-bar" id="report_ibnu" max="100" value="89">
               <!-- For older browser, which doesn't support <progress> styles -->
@@ -837,107 +902,114 @@
                 <span style="width: 89%">Progress: 89%</span>
               </div>
             </progress>
-            <svg class="reports-status" width="20" height="20">
-              <use class="up" href="./src/img/icons.svg#icon-up"></use>
-              <use class="dash" href="./src/img/icons.svg#icon-dash"></use>
-              <use class="down" href="./src/img/icons.svg#icon-down"></use>
+            <svg class="reports-icon" width="20" height="20">
+              <use class="up" href="/sass-cats-dashboard-template/assets/icons.svg#icon-up"></use>
+              <use class="dash" href="/sass-cats-dashboard-template/assets/icons.svg#icon-dash"></use>
+              <use class="down" href="/sass-cats-dashboard-template/assets/icons.svg#icon-down"></use>
             </svg>
           </li>
           <li class="reports-item" data-status="dash">
-            <div class="reports-co-worker co-worker">
-              <div class="co-worker-thumb">
+            <div class="reports-staff staff">
+              <div class="staff-thumb">
                 <img
-                  class="co-worker-avatar"
-                  src="./src/img/avatars/thumb.svg"
+                  class="staff-avatar"
+                  src="/sass-cats-dashboard-template/assets/thumb.svg"
                   alt="Kelen Indah"
                   width="32"
-                  height="32" />
+                  height="32"
+                />
               </div>
-              <h3 class="co-worker-caption">Kelen Indah</h3>
+              <h3 class="staff-caption">Kelen Indah</h3>
             </div>
             <progress
               class="reports-bar"
               id="report_indash"
               max="100"
-              value="43">
+              value="43"
+            >
               <!-- For older browser, which doesn't support <progress> styles -->
               <div class="progress-bar">
                 <span style="width: 43%">Progress: 43%</span>
               </div>
             </progress>
-            <svg class="reports-status" width="20" height="20">
-              <use class="up" href="./src/img/icons.svg#icon-up"></use>
-              <use class="dash" href="./src/img/icons.svg#icon-dash"></use>
-              <use class="down" href="./src/img/icons.svg#icon-down"></use>
+            <svg class="reports-icon" width="20" height="20">
+              <use class="up" href="/sass-cats-dashboard-template/assets/icons.svg#icon-up"></use>
+              <use class="dash" href="/sass-cats-dashboard-template/assets/icons.svg#icon-dash"></use>
+              <use class="down" href="/sass-cats-dashboard-template/assets/icons.svg#icon-down"></use>
             </svg>
           </li>
           <li class="reports-item" data-status="up">
-            <div class="reports-co-worker co-worker">
-              <div class="co-worker-thumb">
+            <div class="reports-staff staff">
+              <div class="staff-thumb">
                 <img
-                  class="co-worker-avatar"
-                  src="./src/img/avatars/thumb.svg"
+                  class="staff-avatar"
+                  src="/sass-cats-dashboard-template/assets/thumb.svg"
                   alt="Mas Indro"
                   width="32"
-                  height="32" />
+                  height="32"
+                />
               </div>
-              <h3 class="co-worker-caption">Mas Indro</h3>
+              <h3 class="staff-caption">Mas Indro</h3>
             </div>
             <progress
               class="reports-bar"
               id="report_indro"
               max="100"
-              value="56">
+              value="56"
+            >
               <!-- For older browser, which doesn't support <progress> styles -->
               <div class="progress-bar">
                 <span style="width: 56%">Progress: 56%</span>
               </div>
             </progress>
-            <svg class="reports-status" width="20" height="20">
-              <use class="up" href="./src/img/icons.svg#icon-up"></use>
-              <use class="dash" href="./src/img/icons.svg#icon-dash"></use>
-              <use class="down" href="./src/img/icons.svg#icon-down"></use>
+            <svg class="reports-icon" width="20" height="20">
+              <use class="up" href="/sass-cats-dashboard-template/assets/icons.svg#icon-up"></use>
+              <use class="dash" href="/sass-cats-dashboard-template/assets/icons.svg#icon-dash"></use>
+              <use class="down" href="/sass-cats-dashboard-template/assets/icons.svg#icon-down"></use>
             </svg>
           </li>
           <li class="reports-item" data-status="dash">
-            <div class="reports-co-worker co-worker">
-              <div class="co-worker-thumb">
+            <div class="reports-staff staff">
+              <div class="staff-thumb">
                 <img
-                  class="co-worker-avatar"
-                  src="./src/img/avatars/thumb.svg"
+                  class="staff-avatar"
+                  src="/sass-cats-dashboard-template/assets/thumb.svg"
                   alt="Geo Vanni"
                   width="32"
-                  height="32" />
+                  height="32"
+                />
               </div>
-              <h3 class="co-worker-caption">Geo Vanni</h3>
+              <h3 class="staff-caption">Geo Vanni</h3>
             </div>
             <progress
               class="reports-bar"
               id="report_vanni"
               max="100"
-              value="63">
+              value="63"
+            >
               <!-- For older browser, which doesn't support <progress> styles -->
               <div class="progress-bar">
                 <span style="width: 63%">Progress: 63%</span>
               </div>
             </progress>
-            <svg class="reports-status" width="20" height="20">
-              <use class="up" href="./src/img/icons.svg#icon-up"></use>
-              <use class="dash" href="./src/img/icons.svg#icon-dash"></use>
-              <use class="down" href="./src/img/icons.svg#icon-down"></use>
+            <svg class="reports-icon" width="20" height="20">
+              <use class="up" href="/sass-cats-dashboard-template/assets/icons.svg#icon-up"></use>
+              <use class="dash" href="/sass-cats-dashboard-template/assets/icons.svg#icon-dash"></use>
+              <use class="down" href="/sass-cats-dashboard-template/assets/icons.svg#icon-down"></use>
             </svg>
           </li>
           <li class="reports-item" data-status="down">
-            <div class="reports-co-worker co-worker">
-              <div class="co-worker-thumb">
+            <div class="reports-staff staff">
+              <div class="staff-thumb">
                 <img
-                  class="co-worker-avatar"
-                  src="./src/img/avatars/thumb.svg"
+                  class="staff-avatar"
+                  src="/sass-cats-dashboard-template/assets/thumb.svg"
                   alt="Avian Rizk"
                   width="32"
-                  height="32" />
+                  height="32"
+                />
               </div>
-              <h3 class="co-worker-caption">Avian Rizk</h3>
+              <h3 class="staff-caption">Avian Rizk</h3>
             </div>
             <progress class="reports-bar" id="report_rizk" max="100" value="63">
               <!-- For older browser, which doesn't support <progress> styles -->
@@ -945,16 +1017,16 @@
                 <span style="width: 63%">Progress: 63%</span>
               </div>
             </progress>
-            <svg class="reports-status" width="20" height="20">
-              <use class="up" href="./src/img/icons.svg#icon-up"></use>
-              <use class="dash" href="./src/img/icons.svg#icon-dash"></use>
-              <use class="down" href="./src/img/icons.svg#icon-down"></use>
+            <svg class="reports-icon" width="20" height="20">
+              <use class="up" href="/sass-cats-dashboard-template/assets/icons.svg#icon-up"></use>
+              <use class="dash" href="/sass-cats-dashboard-template/assets/icons.svg#icon-dash"></use>
+              <use class="down" href="/sass-cats-dashboard-template/assets/icons.svg#icon-down"></use>
             </svg>
           </li>
         </ul>
       </section>
     </main>
 
-    <script type="module" src="./src/js/main.js"></script>
+    
   </body>
 </html>
